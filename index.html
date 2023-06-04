@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget-App</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <script src="./app.js" defer></script>
+</head>
+
+<body>
+
+    <p class="main-heading">Budget Tracker</p>
+
+    <div class="upper-box">
+        <div class="box-1">
+            <label for="monthly-budget-field" class="lable-monthly-budget">Add Budget:</label>
+            <br><br>
+            <input type="number" name="monthly-budget" id="monthly-budget-field" placeholder="Enter Total Amount">
+            <br><br>
+            <input type="button" value="Add Budget" id="add-budget-btn">
+        </div>
+
+        <div class="box-2">
+            <label for="product-title-field" class="lable-monthly-budget">Add Expense:</label>
+            <br><br>
+            <input type="text" name="product-title" id="product-title-field" placeholder="Add Product Title"
+                maxlength="25">
+            <br><br>
+            <input type="number" name="product cost" id="product-cost-field" placeholder="Add Product Cost">
+            <br><br>
+            <input type="date" name="date" id="date">
+            <br><br>
+            <input type="button" value="Add Expense" id="add-expense-btn">
+        </div>
+    </div>
+    <br><br>
+    <div class="calculate-box">
+        <div class="total-budget">
+            <p>Total Budget</p>
+            <span id="total-amount">0</span>
+        </div>
+        <div class="total-expenses">
+            <p>Expenses</p>
+            <span id="expenses-amount">0</span>
+        </div>
+        <div class="remain-balance">
+            <p>Remaining Balance</p>
+            <span id="remain-amount">0</span>
+        </div>
+    </div>
+    <h1 class="expense-list-heading">Expense List</h1>
+
+    <div id="list-container">
+        <div class="expense-list">
+            <p>Title</p>
+            <p>Cost</p>
+            <p>Date</p>
+            <p>Action</p>
+        </div>
+
+        <table id="expense-table">
+
+        </table>
+    </div>
+
+</body>
+
+</html>
